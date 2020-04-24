@@ -1,10 +1,73 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="ja">
-<meta charset="utf-8">
-<link rel="stylesheet" href="index.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="index.js"></script>
-<p class="takamatsu">高松</p>
-<button id="color">test</button>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
 
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#!">三相電力△</a>
+    </nav>
+
+    <div class="container p-5">
+        <div class="form-inline">
+            <input type="text" class="form-control w-25" placeholder="A(アンペア)" id="box1"><span>+</span>
+            <input type="text" class="form-control w-25" placeholder="V(VVVV)" id="box2">
+        </div>
+
+        <div>
+            <label class="mt-2" id="lbl_total">計算してないよ</label>
+        </div>
+        <button id="total_sum" class="btn btn-outline-primary">合計</button>
+        <div class="mt-3">
+            <div>合計より下なら<span class="gray">グレー</span></div>
+            <div>合計と一緒なら<span class="yellow">黄色</span></div>
+            <div>合計より上なら<span class="red">赤</span></div>
+        </div>
+    </div>
+
+    <div class="container mt-5 ">
+        <div class="col-lg-12">
+            <div class="page-header">
+                <h1 id="tables"></h1>
+            </div>
+            <div class="bs-component">
+                <table class="table w-75">
+
+                    <tr class="table-active">
+                        <th scope="col" class="text-center">数値A</th>
+                        <th scope="col" class="text-center">数値B</th>
+                        <th scope="col" class="text-center">数値C</th>
+                    </tr>
+                    <tr class="table-light">
+                        <td class="num_all text-center">10</td>
+                        <td class="num_all text-center">15</td>
+                        <td class="num_all text-center">20</td>
+                    </tr>
+                    <tr class="table-light">
+                        <td class="num_all text-center">20</td>
+                        <td class="num_all text-center">25</td>
+                        <td class="num_all text-center">30</td>
+                    </tr>
+                    <tr class="table-light">
+                        <td class="num_all text-center">40</td>
+                        <td class="num_all text-center">45</td>
+                        <td class="num_all text-center">50</td>
+                    </tr>
+                    <tr class="table-light">
+                        <td class="num_all text-center">60</td>
+                        <td class="num_all text-center">65</td>
+                        <td class="num_all text-center">70</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+</body>
 </html>

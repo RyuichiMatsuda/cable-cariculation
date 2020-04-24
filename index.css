@@ -1,4 +1,43 @@
-p{
+table {
+    width: 500px;
+    border-collapse: collapse;
+}
 
-color:#ff0011;
+    table tr *:nth-child(1) {
+        background: gray;
+    }
+
+    table tr *:nth-child(2) {
+        background: gray;
+    }
+
+    table tr *:nth-child(3) {
+        background: gray;
+    }
+
+    table th {
+        color: white;
+        border: solid 1px white;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    table td {
+        color: black;
+        border: solid 1px white;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+.red {
+    color: red;
+}
+
+.gray {
+    color: gray;
+}
+
+.yellow {
+    color: yellow;
+    background-color: wheat;
 }
