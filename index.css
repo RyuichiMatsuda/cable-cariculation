@@ -3,3 +3,8 @@
 .font-san {
     font-family: 'Noto Sans JP', sans-serif;
 }
+body {
+    background-image: url(koujisi19.png);
+    background-color: rgba(255,255,255,0.9);
+    background-blend-mode: lighten;
+}
