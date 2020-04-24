@@ -3,6 +3,8 @@
         let num1 = $("#box1").val();
         let num2 = $("#box2").val();
         let total = 0
+        $("#lbl_total").css('font-size', '20px')
+
         if (!num1 || !num2) {
             $("#lbl_total").text("は?");
             $("#lbl_total").css('font-size', '300px')
@@ -18,11 +20,26 @@ function comparison(total) {
     $(".num_all").each(function (index, element) {
         let td = $(element).text();
         if (td < total) {
-            $(element).css('background-color', 'white');
+            $(element).animate(
+                {
+                    'opacity': 1,
+                    'backgroundColor': 'white'
+                }, 300
+            );
         } else if (td == total) {
-            $(element).css('background-color', 'yellow');
+            $(element).animate(
+                {
+                    'opacity':0.9,
+                    'backgroundColor': '#ffffe0'
+                }, 500
+            );
         } else if (td > total) {
-            $(element).css('background-color', 'red');
+            $(element).animate(
+                {
+                    'opacity': 0.8,
+                    'backgroundColor': '#ff6347'
+                }, 700
+            );
         }
     });
 
